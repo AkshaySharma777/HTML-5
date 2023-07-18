@@ -5,6 +5,13 @@
     <meta name="viewport" content="width=
     , initial-scale=1.0">
     <title>Document</title>
+    <style>
+        dialog {
+            background-color: rgb(142, 13, 34);
+            margin: 20px;
+            color: white;
+        }
+      </style>
 </head>
 <body>
     <center>
@@ -43,5 +50,60 @@
              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ipsum at deleniti nisi maiores numquam eos, dignissimos aut asperiores molestias mollitia dicta veniam earum vitae rem nulla minima. Nostrum, suscipit?
          </p>
       </details>
+      <hr>
+      <center>
+        <h3>
+            TIME TAG
+        </h3>
+        <p>
+            <b>
+                HTML time
+            </b>
+              tag is used to define date and time.
+        </p>
+      </center>
+      <hr>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente tempore magni error, 2:30 PM dolores aut pariatur magnam numquam nisi eveniet minus officia id fugit ea modi iusto ut, eligendi, expedita consequuntur.
+      </p>
+
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia cum sapiente eos. <time>2:30 PM</time> Fugiat eius consequuntur obcaecati molestias magni repellendus perspiciatis expedita architecto iste beatae. Non sed culpa perspiciatis voluptates possimus!
+      </p>
+      <hr>
+      <center>
+        <h3>
+        DIALOGUE TAG
+        </h3>
+        <P>
+            <b>
+                ( This tag is used to create a new popup dialog on a web page. )
+            </b>
+        </P>
+      </center>
+      <hr>
+      <dialog id="dialogID">
+        <button type="button" id="closeButton">
+         &times;
+        </button>
+        <h1>
+          FULL STACK
+        </h1>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat enim in autem excepturi amet quibusdam, qui vitae quis natus accusamus sit voluptatum ullam soluta quas aliquam quia modi eligendi exercitationem. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla, dolorem maiores quaerat beatae veritatis mollitia ea non soluta delectus expedita reprehenderit at temporibus dolores veniam perspiciatis laudantium nemo reiciendis totam.
+        </p>
+      </dialog>
+      <button type="button" id="openDialog">
+      Open Dialog Tag
+      </button>
+      
+      <script>
+        document.getElementById("openDialog").onclick  = function(){
+            document.getElementById("dialogID").show();
+        };
+        document.getElementById("closeButton").onclick = function(){
+            document.getElementById("dialogID").close();
+        };
+      </script>
 </body>
 </html>
